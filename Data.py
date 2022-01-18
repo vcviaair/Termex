@@ -6,62 +6,52 @@ class Data:
     START = """
 Hey {}
 
-Welcome to {}
+- مرحبـاً بـك عزيـزي {}
+- فـي بـوت كود تيرمكس$بايروجرام التابع لجيبثون
 
-If you don't trust this bot, 
-1) stop reading this message
-2) delete this chat
-
-Still reading?
-You can use me to generate pyrogram and telethon string session. Use below buttons to learn more !
-
-By @StarkBots
+- يعمـل هـذا البـوت لمساعدتـك بطريقـة سهلـه للحصـول على كـود تيرمكـس والبايروجرام تم انشـاء هـذا البـوت بواسطـة : @jepthon
     """
 
     # Home Button
     home_buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
+        [InlineKeyboardButton("- بدأ استخراج الكود", callback_data="generate")],
         [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
     ]
 
     generate_button = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")]
+        [InlineKeyboardButton("- بدأ استخراج الكود", callback_data="generate")]
     ]
 
     # Rest Buttons
     buttons = [
-        [InlineKeyboardButton("🔥 Start Generating Session 🔥", callback_data="generate")],
-        [InlineKeyboardButton("✨ Bot Status and More Bots ✨", url="https://t.me/StarkBots/7")],
+        [InlineKeyboardButton("- بدأ الاستخراج الكود", callback_data="generate")],
+        [InlineKeyboardButton("- قناة السورس", url="https://t.me/jepthon")],
         [
-            InlineKeyboardButton("How to Use ❔", callback_data="help"),
-            InlineKeyboardButton("🎪 About 🎪", callback_data="about")
+            InlineKeyboardButton("- كيف تستخدمني ?", callback_data="help"),
+            InlineKeyboardButton("- حول ", callback_data="about")
         ],
-        [InlineKeyboardButton("♥ More Amazing bots ♥", url="https://t.me/StarkBots")],
     ]
 
     # Help Message
     HELP = """
 ✨ **Available Commands** ✨
 
-/about - About The Bot
-/help - This Message
-/start - Start the Bot
-/generate - Start Generating Session
-/cancel - Cancel the process
-/restart - Cancel the process
+/about - حول البوت
+/help - لتسوي روحك كلشي متعرف
+/start - حتى تشغل البوا
+/generate - حتى تبدا بأستخراج البوت
+/cancel - لألغاء الاستخراج
+/restart - اعادة تشغيل البوت
 """
 
     # About Message
     ABOUT = """
-**About This Bot** 
+- حـول البـوت . 
 
-A telegram bot to generate pyrogram and telethon string session by @StarkBots
+- بـوت استخـراج كـود تيرمكـس خـاص بســورس جيبثون
+- قنـاة السـورس : Jepthon
 
-Source Code : [Click Here](https://github.com/StarkBotsIndustries/StringSessionBot)
+- السيد : @lMl10l .
 
-Framework : [Pyrogram](docs.pyrogram.org)
-
-Language : [Python](www.python.org)
-
-Developer : @StarkProgrammer
+- لغـة البـوت : بـايثـون .
     """

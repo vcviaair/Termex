@@ -25,10 +25,10 @@ from telethon.errors import (
 @Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
 async def main(_, msg):
     await msg.reply(
-        "اذا كنت تريد تنصيب جيبثون ميوزك فأختار Pyrogram, واذا تريد تنصيب التليثون فأختار Telethon",
+        "اذا كنت تريد تنصيب جيبثون ميوزك فأختار بايروجرا, واذا تريد تنصيب التليثون فأختار تيرمكس",
         reply_markup=InlineKeyboardMarkup([[
-            InlineKeyboardButton("Pyrogram", callback_data="pyrogram"),
-            InlineKeyboardButton("Telethon", callback_data="telethon")
+            InlineKeyboardButton("بايروجرام", callback_data="pyrogram"),
+            InlineKeyboardButton("تيرمكس", callback_data="telethon")
         ]])
     )
 
@@ -48,11 +48,11 @@ async def generate_session(bot, msg, telethon=False):
     if await cancelled(api_id_msg):
         return
     api_hash = api_hash_msg.text
-    phone_number_msg = await bot.ask(user_id, 'Now please send your `PHONE_NUMBER` along with the country code. \nExample : `+19876543210`', filters=filters.text)
+    phone_number_msg = await bot.ask(user_id, '- الان يرجى ارسال رقمك بشكل كامل , مثال :+964xxxxxxx', filters=filters.text)
     if await cancelled(api_id_msg):
         return
     phone_number = phone_number_msg.text
-    await msg.reply("Sending OTP...")
+    await msg.reply("انتظر لحظة...")
     if telethon:
         client = TelegramClient(StringSession(), api_id, api_hash)
     else:

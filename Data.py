@@ -15,7 +15,7 @@ Hey {}
     # Home Button
     home_buttons = [
         [InlineKeyboardButton("- بدأ استخراج الكود", callback_data="generate")],
-        [InlineKeyboardButton(text="🏠 Return Home 🏠", callback_data="home")]
+        [InlineKeyboardButton(text=" الرجوع للرئيسية ", callback_data="home")]
     ]
 
     generate_button = [

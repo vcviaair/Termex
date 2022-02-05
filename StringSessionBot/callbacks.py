@@ -45,7 +45,7 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
         )
     elif query == "generate":
         await callback_query.message.reply(
-            "اذا كنت تريد تنصيب جيبثون ميوزك فأختار بايروجرام, واذا تريد تنصيب التليثون فأختار تيرمكس",
+            "اذا كنت تريد تنصيب براكو ميوزك فأختار بايروجرام, واذا تريد تنصيب التليثون فأختار تيرمكس",
             reply_markup=InlineKeyboardMarkup([[
                 InlineKeyboardButton("كود بايروجرام", callback_data="pyrogram"),
                 InlineKeyboardButton("كود تيرمكس", callback_data="telethon")
@@ -65,6 +65,6 @@ async def _callbacks(bot: Client, callback_query: CallbackQuery):
 
 
 ERROR_MESSAGE = "Oops! An exception occurred! \n\n**Error** : {} " \
-            "\n\nPlease visit @lMl10l if this message doesn't contain any " \
+            "\n\nPlease visit @QABNADLIB if this message doesn't contain any " \
             "sensitive information and you if want to report this as " \
             "this error message is not being logged by us!"

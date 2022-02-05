@@ -19,7 +19,7 @@ async def must_join_channel(bot: Client, msg: Message):
                 link = chat_info.invite_link
             try:
                 await msg.reply(
-                    f"يجب ان تشترك [جيبثون العرب]({https://t.me/Jepthon}) حتى تتمكن من استخدامي.",
+                    f"يجب ان تشترك [فرانكو العرب]({https://t.me/VFF33}) حتى تتمكن من استخدامي.",
                     disable_web_page_preview=True,
                     reply_markup=InlineKeyboardMarkup([
                         [InlineKeyboardButton("✨ يرجى الاشتراك في القناة ✨", url=link)]

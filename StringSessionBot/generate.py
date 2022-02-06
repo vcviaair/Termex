@@ -25,7 +25,7 @@ from telethon.errors import (
 @Client.on_message(filters.private & ~filters.forwarded & filters.command('generate'))
 async def main(_, msg):
     await msg.reply(
-        "اذا كنت تريد تنصيب فرانكو ميوزك فأختار بايروجرا, واذا تريد تنصيب التليثون فأختار تيرمكس",
+        "اذا كنت تريد تنصيب سورس ميوزك فأختار بايروجرا, واذا تريد تنصيب التليثون فأختار تيرمكس",
         reply_markup=InlineKeyboardMarkup([[
             InlineKeyboardButton("بايروجرام", callback_data="pyrogram"),
             InlineKeyboardButton("تيرمكس", callback_data="telethon")
@@ -90,7 +90,7 @@ async def generate_session(bot, msg, telethon=False):
         return
     except (SessionPasswordNeeded, SessionPasswordNeededError):
         try:
-            two_step_msg = await bot.ask(user_id, 'حسابك يحتوي على التحقق بخطوتين - قم بكتابة الرمز لاتخاف حسابك آمن لدى فرانكو .', filters=filters.text, timeout=300)
+            two_step_msg = await bot.ask(user_id, 'حسابك يحتوي على التحقق بخطوتين - قم بكتابة الرمز لاتخاف حسابك آمن لدى سورس ميوزك .', filters=filters.text, timeout=300)
         except TimeoutError:
             await msg.reply('لغد بلغ الحد الزمني 5 دقايق. ارجع عيد من جديد.', reply_markup=InlineKeyboardMarkup(Data.generate_button))
             return
@@ -109,13 +109,13 @@ async def generate_session(bot, msg, telethon=False):
         string_session = client.session.save()
     else:
         string_session = await client.export_session_string()
-    text = "**{} STRING SESSION** \n\n`{}` \n\nمن قبل  @VFF33".format("TELETHON" if telethon else "PYROGRAM", string_session)
+    text = "**{} STRING SESSION** \n\n`{}` \n\nمن قبل  @SourceRiley".format("TELETHON" if telethon else "PYROGRAM", string_session)
     try:
         await client.send_message("me", text)
     except KeyError:
         pass
     await client.disconnect()
-    await phone_code_msg.reply("تم أستخراج بنجاح {} string session. \n\nاذهب الى الرسائل المحفوظة! \n\nتم ألاستخراج من قبل @VFF33".format("telethon" if telethon else "pyrogram"))
+    await phone_code_msg.reply("تم أستخراج بنجاح {} string session. \n\nاذهب الى الرسائل المحفوظة! \n\nتم ألاستخراج من قبل @SourceRiley".format("telethon" if telethon else "pyrogram"))
 
 
 async def cancelled(msg):

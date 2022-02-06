@@ -7,9 +7,9 @@ class Data:
 Hey {}
 
 - مرحبـاً بـك عزيـزي {}
-- فـي بـوت كود تيرمكس$بايروجرام التابع لفرانكو
+- فـي بـوت كود تيرمكس$بايروجرام التابع لميوزك
 
-- يعمـل هـذا البـوت لمساعدتـك بطريقـة سهلـه للحصـول على كـود تيرمكـس والبايروجرام تم انشـاء هـذا البـوت بواسطـة : @VFF33
+- يعمـل هـذا البـوت لمساعدتـك بطريقـة سهلـه للحصـول على كـود تيرمكـس والبايروجرام تم انشـاء هـذا البـوت بواسطـة : @SourceRiley
     """
 
     # Home Button
@@ -25,7 +25,7 @@ Hey {}
     # Rest Buttons
     buttons = [
         [InlineKeyboardButton("- بدأ الاستخراج الكود", callback_data="generate")],
-        [InlineKeyboardButton("- قناة السورس", url="https://t.me/VFF33")],
+        [InlineKeyboardButton("- قناة السورس", url="https://t.me/SourceRiley")],
         [
             InlineKeyboardButton("- كيف تستخدمني ?", callback_data="help"),
             InlineKeyboardButton("- حول ", callback_data="about")
@@ -48,8 +48,8 @@ Hey {}
     ABOUT = """
 - حـول البـوت . 
 
-- بـوت استخـراج كـود تيرمكـس خـاص بســورس فرانكو
-- قنـاة السـورس : @VFF33
+- بـوت استخـراج كـود تيرمكـس خـاص بســورس ميوزك
+- قنـاة السـورس : @SourceRiley
 
 - المطور : @QABNADLIB .
 

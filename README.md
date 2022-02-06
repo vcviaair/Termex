@@ -66,9 +66,9 @@ Telegram bot to generate pyrogram and telethon string session.
 
 ## Support
 
-Channel :- [@StarkBots](https://t.me/StarkBots)
+Channel :- [@UIlUIIU_bot](https://t.me/SourceRiley)
 
-Group Chat :- [@StarkBotsChat](https://t.me/StarkBotsChat)
+Group Chat :- [@UIlUIIU_bot](https://t.me/ZAIDSUPPORT)
 
 ## :)
 

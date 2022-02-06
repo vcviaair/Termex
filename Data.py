@@ -4,7 +4,7 @@ from pyrogram.types import InlineKeyboardButton
 class Data:
     # Start Message
     START = """
-Hey {}
+مرحبا {}
 
 - مرحبـاً بـك عزيـزي {}
 - فـي بـوت كود تيرمكس$بايروجرام التابع لميوزك
